@@ -138,15 +138,7 @@
           </q-file>
         </div>
       </div>
-      <q-table
-        class="col-6 q-pa-md"
-        v-if="cursos.length > 0"
-        title="Cursos registrados"
-        :rows="cursos"
-        :columns="columnascurso"
-        row-key="name"
-      >
-      </q-table>
+     
     </div>
     <!-- FIN DE SECCION  -->
 
@@ -215,15 +207,7 @@
           </q-btn>
         </div>
 
-        <q-table
-          class="col-6 q-pa-md"
-          v-if="cursos.length > 0"
-          title="Cursos registrados"
-          :rows="cursos"
-          :columns="columnascurso"
-          row-key="name"
-        >
-        </q-table>
+        
       </div>
     </div>
     <!-- FIN DE CURSOS-->

@@ -466,7 +466,7 @@
       </q-scroll-area>
       <q-img
         class="absolute-top q-mt-sm"
-        src="http://localhost:8080/img/fam_negro2 (1).png"
+        src="/img/fam_negro2 (1).png"
       >
       </q-img>
     </q-drawer>

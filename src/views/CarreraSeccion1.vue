@@ -501,14 +501,7 @@
           ><span v-else-if="distincionesunam == false"> No</span></strong
         >
 
-        <q-table
-          v-if="comisiones.length > 0 && licencias == true"
-          title="Licencias y/o comisiones registradas"
-          :rows="comisiones"
-          :columns="columns"
-          row-key="name"
-        >
-        </q-table>
+        
       </div>
       <p
         class="q-pt-md cursor-pointer"
@@ -631,15 +624,7 @@
               </q-btn>
             </div>
 
-            <q-table
-              class="col-6 q-pa-md"
-              v-if="cursos.length > 0"
-              title="Cursos registrados"
-              :rows="cursos"
-              :columns="columnascurso"
-              row-key="name"
-            >
-            </q-table>
+           
           </div>
           <!-- INICIO DE SECCION  -->
           <div v-if="$route.params.tipo == 1 || $route.params.tipo == 2">
@@ -713,15 +698,7 @@
                 />
               </div>
             </div>
-            <q-table
-              class="col-6 q-pa-md"
-              v-if="cursos.length > 0"
-              title="Cursos registrados"
-              :rows="cursos"
-              :columns="columnascurso"
-              row-key="name"
-            >
-            </q-table>
+           
           </div>
           <!-- FIN DE SECCION  -->
           <div
@@ -864,15 +841,7 @@
                 </q-file>
               </div>
             </div>
-            <q-table
-              class="col-6 q-pa-md"
-              v-if="cursos.length > 0"
-              title="Cursos registrados"
-              :rows="cursos"
-              :columns="columnascurso"
-              row-key="name"
-            >
-            </q-table>
+           
           </div>
           <!-- FIN DE SECCION  -->
           <!-- INICIO DE SECCION  -->
@@ -917,15 +886,7 @@
                 />
               </div>
             </div>
-            <q-table
-              class="col-6 q-pa-md"
-              v-if="cursos.length > 0"
-              title="Cursos registrados"
-              :rows="cursos"
-              :columns="columnascurso"
-              row-key="name"
-            >
-            </q-table>
+            
           </div>
         </div>
         <!-- FIN DE SECCION  -->

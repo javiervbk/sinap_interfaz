@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
 import AsignaturaSecUnoFormSimplificado from "../views/AsignaturaSecUnoSimplificado.vue";
 import CarreraSeccion1 from "../views/CarreraSeccion1.vue";
 import CarreraSeccion2 from "../views/CarreraSeccion2.vue";
@@ -9,12 +8,11 @@ import CarreraSeccion5 from "../views/CarreraSeccion5.vue";
 import login from "../views/login.vue";
 import seleccionInstrumento from "../views/seleccionInstrumento.vue";
 
-
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "login",
+    component: login,
   },
   {
     path: "/:tipo/seccion1",
@@ -45,11 +43,6 @@ const routes = [
     path: "/simplificados",
     name: "AsignaturaSecUnoSimplificado",
     component: AsignaturaSecUnoFormSimplificado,
-  },
-  {
-    path: "/login",
-    name: "login",
-    component: login,
   },
   {
     path: "/tipoDeReactivo",
