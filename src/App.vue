@@ -463,6 +463,14 @@
             </q-item>
           </q-expansion-item>
         </q-list>
+        <q-btn
+      unelevated
+      color="blue-grey-6"
+      size="md"
+      class="full-width q-mt-lg"
+      label="salir"
+      href="/"
+    />
       </q-scroll-area>
       <q-img
         class="absolute-top q-mt-sm"
