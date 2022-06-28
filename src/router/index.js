@@ -1,11 +1,60 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import AsignaturaSecUnoFormSimplificado from "../views/AsignaturaSecUnoSimplificado.vue";
+import CarreraSeccion1 from "../views/CarreraSeccion1.vue";
+import CarreraSeccion2 from "../views/CarreraSeccion2.vue";
+import CarreraSeccion3 from "../views/CarreraSeccion3.vue";
+import CarreraSeccion4 from "../views/CarreraSeccion4.vue";
+import CarreraSeccion5 from "../views/CarreraSeccion5.vue";
+import login from "../views/login.vue";
+import seleccionInstrumento from "../views/seleccionInstrumento.vue";
+
 
 const routes = [
   {
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/:tipo/seccion1",
+    name: "CarreraSeccion1",
+    component: CarreraSeccion1,
+  },
+  {
+    path: "/:tipo/seccion2",
+    name: "CarreraSeccion2",
+    component: CarreraSeccion2,
+  },
+  {
+    path: "/:tipo/seccion3",
+    name: "CarreraSeccion3",
+    component: CarreraSeccion3,
+  },
+  {
+    path: "/:tipo/seccion4",
+    name: "CarreraSeccion4",
+    component: CarreraSeccion4,
+  },
+  {
+    path: "/:tipo/seccion5",
+    name: "CarreraSeccion5",
+    component: CarreraSeccion5,
+  },
+  {
+    path: "/simplificados",
+    name: "AsignaturaSecUnoSimplificado",
+    component: AsignaturaSecUnoFormSimplificado,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: login,
+  },
+  {
+    path: "/tipoDeReactivo",
+    name: "seleccionInstrumento",
+    component: seleccionInstrumento,
   },
   {
     path: "/about",
