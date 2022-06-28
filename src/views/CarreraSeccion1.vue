@@ -14,7 +14,7 @@
       />
       <q-input
         filled
-        v-model="name"
+        v-model="primerapellido"
         label="Primer apellido"
         class="col-4 q-pa-md"
         lazy-rules
@@ -22,7 +22,7 @@
       />
       <q-input
         filled
-        v-model="name"
+        v-model="segundoapellido"
         label="Segundo Apellido"
         class="col-4 q-pa-md"
         lazy-rules
@@ -30,7 +30,7 @@
       />
       <q-input
         filled
-        v-model="name"
+        v-model="ntrabajador"
         label="Número de trabajador"
         class="col-4 q-pa-md"
         lazy-rules
@@ -38,7 +38,7 @@
       />
       <q-input
         filled
-        v-model="name"
+        v-model="curp"
         label="CURP"
         class="col-4 q-pa-md"
         hint=""
@@ -47,7 +47,7 @@
       />
       <q-input
         filled
-        v-model="name"
+        v-model="correoadicional"
         label="Correo adicional"
         class="col-4 q-pa-md"
         hint="Diferente al @fam.unam.mx"
@@ -500,8 +500,6 @@
           ><span v-if="distincionesexternas"> Sí</span
           ><span v-else-if="distincionesunam == false"> No</span></strong
         >
-
-        
       </div>
       <p
         class="q-pt-md cursor-pointer"
@@ -623,8 +621,6 @@
                 <div>Agregar</div>
               </q-btn>
             </div>
-
-           
           </div>
           <!-- INICIO DE SECCION  -->
           <div v-if="$route.params.tipo == 1 || $route.params.tipo == 2">
@@ -698,7 +694,6 @@
                 />
               </div>
             </div>
-           
           </div>
           <!-- FIN DE SECCION  -->
           <div
@@ -841,7 +836,6 @@
                 </q-file>
               </div>
             </div>
-           
           </div>
           <!-- FIN DE SECCION  -->
           <!-- INICIO DE SECCION  -->
@@ -886,7 +880,6 @@
                 />
               </div>
             </div>
-            
           </div>
         </div>
         <!-- FIN DE SECCION  -->
@@ -987,6 +980,11 @@ export default {
 
   data() {
     return {
+      primerapellido: null,
+      segundoapellido: null,
+      ntrabajador: null,
+      curp: null,
+      correoadicional: null,
       boletacursos: null,
       nombredelcurso: null,
       impartiocursos: null,
