@@ -5,6 +5,8 @@ import CarreraSeccion2 from "../views/CarreraSeccion2.vue";
 import CarreraSeccion3 from "../views/CarreraSeccion3.vue";
 import CarreraSeccion4 from "../views/CarreraSeccion4.vue";
 import CarreraSeccion5 from "../views/CarreraSeccion5.vue";
+import Administrador from "../views/Administrador.vue";
+import RevisionSeccion1 from "../views/RevisionSeccion1.vue";
 import login from "../views/login.vue";
 import seleccionInstrumento from "../views/seleccionInstrumento.vue";
 
@@ -18,6 +20,11 @@ const routes = [
     path: "/:tipo/seccion1",
     name: "CarreraSeccion1",
     component: CarreraSeccion1,
+  },
+  {
+    path: "/:tipo/revision/seccion1",
+    name: "RevisionSeccion1",
+    component: RevisionSeccion1,
   },
   {
     path: "/:tipo/seccion2",
@@ -43,6 +50,11 @@ const routes = [
     path: "/simplificados",
     name: "AsignaturaSecUnoSimplificado",
     component: AsignaturaSecUnoFormSimplificado,
+  },
+  {
+    path: "/administrador",
+    name: "Administrador",
+    component: Administrador,
   },
   {
     path: "/tipoDeReactivo",
